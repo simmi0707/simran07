@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        .category {
+            margin-top: 20px;
+        }
+        .item {
+            display: flex;
+            margin-bottom: 30px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .item:hover {
+            transform: scale(1.05);
+        }
+        .item img {
+            width: 3cm;
+            height: 3cm;
+            margin-right: 20px;
+        }
+        .project-details {
+            display: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        .intro {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+        .intro-left {
+            flex: 1;
+        }
+        .intro-right {
+            flex: 1;
+            text-align: center;
+        }
+        .intro h2 {
+            margin-bottom: 10px;
+            /* font-family: 'Baloo Paaji', cursive; */
+            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+            color: #333;
+        }
+        .know-more-button {
+            background-color: #189175;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .know-more-button:hover {
+            background-color: #189175;
+            
+        }
+        .intro img {
+            width: 100%; 
+            height: 500px; 
+            margin-right: 20px;
+            border-radius: 5px;
+        }
+        body {
+            background-image: url('header2.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Simran Pal</h1>
+            <p>Web Developer & Designer</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="">Login</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <!-- <section class="intro" style="width: 840px;">
+        <div class="intro-left">
+            <p>Hello, I'm Simran Pal, a first-year MCA student with a strong passion for web design. I have a year of practical experience in creating visually captivating and highly functional websites. My portfolio is a testament to my ability to merge design aesthetics with user-centric solutions, demonstrating my unwavering dedication to delivering captivating online experiences.</p>
+            <button class="know-more-button">Know More</button>
+        </div>
+        <div class="intro-right">
+            <img src="IMG_0187.jpg" alt="Your Picture">
+        </div>
+    </section> -->
+    <section class="intro" style="width: 840px; background:none; box-shadow: none;">
+        <div class="intro-left">
+
+            <h2 style="font-size: 70px";>hello I'm Simran Pal</h2>
+            <button class="know-more-button">Know More About me</button>
+        </div>
+        <div class="intro-right">
+            <img src="stu.png" alt="Your Picture">
+        </div>
+    </section>
+<section>
+    
+</section>
+
+    <section id="projects">
+        <div class="category">
+            <h2>Projects</h2>
+            <div class="item" onclick="showDetails('project1-details')">
+                <img src="LOGO1-1 (1).png" alt="Apparel Inc">
+                <div class="item-text">
+                    <h3>Apparel Inc</h3>
+                    <p>Click the project to know more.</p>
+                </div>
+            </div>
+            <div class="item" onclick="showDetails('project2-details')">
+                <img src="IEEIT_final-logo-only-circle.png" alt="IEEIT">
+                <div class="item-text">
+                    <h3>IEEIT</h3>
+                    <p>Click the project to know more.</p>
+                </div>
+            </div>
+            <div class="item" onclick="showDetails('project3-details')">
+                <img src="credible_logo-2.png" alt="Credible Construction Company">
+                <div class="item-text">
+                    <h3>Credible Construction Company</h3>
+                    <p>Click the project to know more.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-details" id="project1-details">
+            <h4>Apparel Inc</h4>
+            <p>The project at <a href="https://www.apparelswagshop.com/" target="_blank">www.apparelswagshop.com</a> is a dynamic e-commerce platform built with WordPress and the Divi Page Builder. Leveraging the power of Divi, the website boasts a visually stunning design that seamlessly integrates with the intuitive functionalities of WordPress. The Divi Page Builder allows for easy customization, ensuring a unique and engaging layout tailored to the brand's aesthetic.
+                This project showcases the versatility of the Divi theme in creating a user-friendly interface, and easily maintainable shopping experience.</p>
+        </div>
+        <div class="project-details" id="project2-details">
+            <h4>IEEIT</h4>
+            <p>The project at <a href="https://ieeit.com/" target="_blank">www.ieeit.com</a> is a dynamic website built with WordPress and powered by Elementor. This combination delivers a seamless blend of visually appealing design and intuitive functionality, providing an engaging and user-friendly experience for visitors. The use of Elementor allows for easy customization, ensuring a unique and captivating layout tailored to the project needs. This website exemplifies the successful integration of WordPress and Elementor, resulting in a visually striking and highly functional online presence.</p>
+        </div>
+        <div class="project-details" id="project3-details">
+            <h4>Credible Construction Company</h4>
+            <p><a href="https://credibleconstruction.in/" target="_blank">www.credibleconstruction.in</a> is a WordPress-powered project skillfully crafted with the Divi Page Builder. This dynamic combination delivers a visually appealing and seamlessly navigable website, emphasizing credibility and quality in the construction industry.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+    </section>
+
+    <br>
+
+    <footer>
+        <p>&copy; 2023 Your Name</p>
+    </footer>
+    
+   
+    <script>
+        function showDetails(projectId) {
+            const projectDetails = document.querySelectorAll('.project-details');
+            projectDetails.forEach((detail) => {
+                detail.style.display = "none";
+            });
+
+            const selectedProject = document.getElementById(projectId);
+            selectedProject.style.display = "block";
+        }
+    </script>
+</body>
+</html>
