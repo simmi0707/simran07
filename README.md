@@ -21,7 +21,6 @@ This is a frontend-only site, so no server-side technologies are required. Simpl
 #### Signup (under development): This page is still in progress.
 #### Skills: This section showcases the skills of Simran Pal.
 #### Projects: This section displays the projects worked on by Simran Pal.
-## Features
 
 ## Contact
 For inquiries or collaboration opportunities, reach out to Simran Pal via LinkedIn. Feel free to raise issues or submit pull requests on the GitHub repository.
