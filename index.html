@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,70 +9,189 @@
         .category {
             margin-top: 20px;
         }
+
         .item {
             display: flex;
             margin-bottom: 30px;
             cursor: pointer;
             transition: transform 0.2s;
         }
+
         .item:hover {
             transform: scale(1.05);
         }
+
         .item img {
             width: 3cm;
             height: 3cm;
             margin-right: 20px;
         }
+
         .project-details {
             display: none;
+        
+            font-weight: 600;
+            font-family: "poppins";
         }
-        a{
+
+        a {
             text-decoration: none;
         }
+
         .intro {
             display: flex;
             align-items: center;
             padding: 20px;
+            font-weight:600;
+            font-family: "poppins";
         }
+
         .intro-left {
             flex: 1;
         }
+
         .intro-right {
             flex: 1;
             text-align: center;
         }
+
         .intro h2 {
             margin-bottom: 10px;
             /* font-family: 'Baloo Paaji', cursive; */
-            font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+            font-family:"poppins";
+            font-size: 30px; 
             color: #333;
         }
+
         .know-more-button {
-            background-color: #189175;
+            background-color: #072589;
             color: white;
             padding: 10px 20px;
+            font-size: 16px;
+            letter-spacing: 2px;
+            font-weight: 500;
+            font-family: "poppins";
             border: none;
-            border-radius: 5px;
+            border-radius: 20px;
             cursor: pointer;
         }
+
         .know-more-button:hover {
-            background-color: #189175;
+            background-color: #072589;
             
         }
+
         .intro img {
-            width: 100%; 
-            height: 500px; 
+            width: 100%;
+            height: 500px;
             margin-right: 20px;
             border-radius: 5px;
         }
+
         body {
             background-image: url('header2.jpg');
             background-size: cover;
             background-attachment: fixed;
         }
+
+        .about {
+            display: flex;
+            align-items: center;
+            padding: 40px;
+            /* background-color: #f9f9f9; */
+            margin-top: 20px;
+        }
+
+        .about-left {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        .about-left img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .about-right {
+            flex: 1;
+        }
+
+        .about h2 {
+            font-size: 35px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            font-family:"Poppins";
+            margin-bottom: 10px;
+            color: #2e2d2d;
+        }
+
+        .about p {
+            font-size: 18px;
+            color: #2e2d2d;
+            font-weight: 500;
+            
+            font-family: "none";
+        }
+
+        .column {
+            float: left;
+            width: 23%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+        }
+
+        .card {
+            box-shadow: 2px 2px 10px rgb(67, 152, 255);
+            margin: 8px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .container {
+            padding: 0 16px;
+        }
+
+        .container::after,
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 100;
+            /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); */
+        }
+
+        .content-container {
+            margin-top: 100px;
+        }
+
+        .social-media-container {
+            text-align: center;
+            /* Center align the icons */
+            margin-top: 20px;
+            /* Adjust the margin as needed */
+        }
+
+        .social-icon {
+            width: 40px;
+            /* Adjust the icon size as needed */
+            height: 40px;
+            margin: 0 10px;
+        
+            /* Add space between icons */
+        }
     </style>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
         <div class="logo">
@@ -82,8 +202,10 @@
             <ul>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="">Login</a></li>
-                
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Signup</a></li>
+                <li><a href=""></a></li>
+
             </ul>
         </nav>
     </header>
@@ -100,16 +222,34 @@
     <section class="intro" style="width: 840px; background:none; box-shadow: none;">
         <div class="intro-left">
 
-            <h2 style="font-size: 70px";>hello I'm Simran Pal</h2>
-            <button class="know-more-button">Know More About me</button>
+            <h2 style="font-size: 70px" ;>Hello I'm Simran Pal</h2>
+            <button class="know-more-button"><a href="#about" style="color: aliceblue;">Know More About Me</a></button>
         </div>
         <div class="intro-right">
-            <img src="stu.png" alt="Your Picture">
+            <img src="sim1.png" alt="Your Picture">
         </div>
     </section>
-<section>
-    
-</section>
+
+    <section id="about" class="about" style="background:none;">
+        <div class="about-left">
+            <img src="sim.png" alt="Your Image">
+        </div>
+        <div class="about-right">
+            <h2>Who Am I?</h2>
+            <p>Greetings, I am Simran Pal, a first-year MCA student. I possess a fervent interest in web design, supported by a year of practical experience in developing visually compelling and functional websites. My portfolio demonstrates a harmonious fusion of design aesthetics and user-centric solutions, underscoring my dedication to delivering captivating online experiences.</p>
+            <div class="social-media-buttons">
+                <a href="https://instagram.com/___its_simi___?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">
+                    <img src="instagram.png" alt="Instagram" class="social-icon" onmouseover="hoverIcon(this, 'instagram_hover.png');" onmouseout="hoverIcon(this, 'instagram.png');">
+                </a>
+                <a href="https://github.com/simmi0707" target="_blank">
+                    <img src="github.png" alt="GitHub" class="social-icon" onmouseover="hoverIcon(this, 'github_hover.png');" onmouseout="hoverIcon(this, 'github.png');">
+                </a>
+                <a href="https://www.linkedin.com/in/simran-pal-a427241b3" target="_blank">
+                    <img src="linkedin-logo.png" alt="linkedin" class="social-icon" onmouseover="hoverIcon(this, 'linkedin_hover.png');" onmouseout="hoverIcon(this, 'linkedin-logo.png');">
+                </a>
+            </div>
+        </div>
+    </section>
 
     <section id="projects">
         <div class="category">
@@ -118,6 +258,7 @@
                 <img src="LOGO1-1 (1).png" alt="Apparel Inc">
                 <div class="item-text">
                     <h3>Apparel Inc</h3>
+                    <a href="https://www.apparelswagshop.com/" target="_blank">www.apparelswagshop.com</a>
                     <p>Click the project to know more.</p>
                 </div>
             </div>
@@ -125,6 +266,7 @@
                 <img src="IEEIT_final-logo-only-circle.png" alt="IEEIT">
                 <div class="item-text">
                     <h3>IEEIT</h3>
+                    <a href="https://ieeit.com/" target="_blank">www.ieeit.com</a>
                     <p>Click the project to know more.</p>
                 </div>
             </div>
@@ -132,6 +274,7 @@
                 <img src="credible_logo-2.png" alt="Credible Construction Company">
                 <div class="item-text">
                     <h3>Credible Construction Company</h3>
+                    <a href="https://credibleconstruction.in/" target="_blank">www.credibleconstruction.in</a>
                     <p>Click the project to know more.</p>
                 </div>
             </div>
@@ -139,30 +282,125 @@
 
         <div class="project-details" id="project1-details">
             <h4>Apparel Inc</h4>
-            <p>The project at <a href="https://www.apparelswagshop.com/" target="_blank">www.apparelswagshop.com</a> is a dynamic e-commerce platform built with WordPress and the Divi Page Builder. Leveraging the power of Divi, the website boasts a visually stunning design that seamlessly integrates with the intuitive functionalities of WordPress. The Divi Page Builder allows for easy customization, ensuring a unique and engaging layout tailored to the brand's aesthetic.
-                This project showcases the versatility of the Divi theme in creating a user-friendly interface, and easily maintainable shopping experience.</p>
+            <p>The project at <a href="https://www.apparelswagshop.com/" target="_blank">www.apparelswagshop.com</a> is
+                a dynamic e-commerce platform built with WordPress and the Divi Page Builder. Leveraging the power of
+                Divi, the website boasts a visually stunning design that seamlessly integrates with the intuitive
+                functionalities of WordPress. The Divi Page Builder allows for easy customization, ensuring a unique and
+                engaging layout tailored to the brand's aesthetic.
+                This project showcases the versatility of the Divi theme in creating a user-friendly interface, and
+                easily maintainable shopping experience.</p>
         </div>
         <div class="project-details" id="project2-details">
             <h4>IEEIT</h4>
-            <p>The project at <a href="https://ieeit.com/" target="_blank">www.ieeit.com</a> is a dynamic website built with WordPress and powered by Elementor. This combination delivers a seamless blend of visually appealing design and intuitive functionality, providing an engaging and user-friendly experience for visitors. The use of Elementor allows for easy customization, ensuring a unique and captivating layout tailored to the project needs. This website exemplifies the successful integration of WordPress and Elementor, resulting in a visually striking and highly functional online presence.</p>
+            <p>The project at <a href="https://ieeit.com/" target="_blank">www.ieeit.com</a> is a dynamic website built
+                with WordPress and powered by Elementor. This combination delivers a seamless blend of visually
+                appealing design and intuitive functionality, providing an engaging and user-friendly experience for
+                visitors. The use of Elementor allows for easy customization, ensuring a unique and captivating layout
+                tailored to the project needs. This website exemplifies the successful integration of WordPress and
+                Elementor, resulting in a visually striking and highly functional online presence.</p>
         </div>
         <div class="project-details" id="project3-details">
             <h4>Credible Construction Company</h4>
-            <p><a href="https://credibleconstruction.in/" target="_blank">www.credibleconstruction.in</a> is a WordPress-powered project skillfully crafted with the Divi Page Builder. This dynamic combination delivers a visually appealing and seamlessly navigable website, emphasizing credibility and quality in the construction industry.</p>
+            <p><a href="https://credibleconstruction.in/" target="_blank">www.credibleconstruction.in</a> is a
+                WordPress-powered project skillfully crafted with the Divi Page Builder. This dynamic combination
+                delivers a visually appealing and seamlessly navigable website, emphasizing credibility and quality in
+                the construction industry.</p>
         </div>
     </section>
 
     <section id="skills">
         <h2>Skills</h2>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <div class="container">
+                        <img src="html-5.png" height="100px" width="100px" style="padding-top: 0.5cm;">
+                        <p style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size:16px; color: black;">
+                            HTML
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="container">
+                        <img src="css-3.png" height="100px" width="100px" style="padding-top: 0.5cm;">
+                        <p style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size:16px; color: black;">
+                            CSS
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="container">
+                        <img src="wordpress.png" height="100px" width="100px" style="padding-top: 0.5cm;">
+                        <p style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size:16px; color: black;">
+                            WordPress
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="container">
+                        <img src="ux.png" height="100px" width="100px" style="padding-top: 0.5cm;">
+                        <p style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size:16px; color: black;">
+                            Web Designing
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="container">
+                        <img src="elem.png" height="100px" width="100px" style="padding-top: 0.5cm;">
+                        <p style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size:16px; color: black;">
+                            Elementor
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="container">
+                        <img src="yoast.png" height="100px" width="100px" style="padding-top: 0.5cm;">
+                        <p style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size:16px; color: black;">
+                            Yoast SEO
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="container">
+                        <img src="web.svg" height="100px" width="100px" style="padding-top: 0.5cm;">
+                        <p style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size:16px; color: black;">
+                            Webflow
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="container">
+                        <img src="woo.png" height="100px" width="100px" style="padding-top: 0.5cm;">
+                        <p style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size:16px; color: black;">
+                            WooCommerce
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <br>
 
     <footer>
-        <p>&copy; 2023 Your Name</p>
+        <p>&copy; 2023 Simran Pal</p>
     </footer>
-    
-   
+
+
     <script>
         function showDetails(projectId) {
             const projectDetails = document.querySelectorAll('.project-details');
@@ -173,6 +411,21 @@
             const selectedProject = document.getElementById(projectId);
             selectedProject.style.display = "block";
         }
+        const cards = document.querySelectorAll('.card');
+
+        cards.forEach((card) => {
+            card.addEventListener('mouseenter', () => {
+                card.style.backgroundColor = '#ffddcc';
+            });
+
+            card.addEventListener('mouseleave', () => {
+                card.style.backgroundColor = '';
+            });
+        });
+        function hoverIcon(element, newImageSrc) {
+        element.src = newImageSrc;
+    }
     </script>
 </body>
+
 </html>
